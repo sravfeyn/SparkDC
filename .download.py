@@ -62,7 +62,7 @@ for i in range (0,3):
 	    continue
 	else:
 	    if th[0]==fileName:
-		print fileName +' is successfuly being downloaded to your Spark folder '+myAddress
+		print th[0] +' is successfuly being downloaded to your Spark folder '+myAddress
 		sys.exit(0) 
 	    else:
 		print 'Slot is not free.Check again later.'+'The user is uploading '+th[0]+' to '+th[2]

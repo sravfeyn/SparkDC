@@ -62,6 +62,7 @@ while True:
 	  fileName = raw_input('Enter the filename to search\n')
        	  continue 
   else:
+     resulted = []
      print 'Matching[s] for your search.'
      counter = 1
      for result in search_results:
@@ -76,7 +77,7 @@ while True:
         print 'Requesting file to your proxy folder '+proxyFolder
 	source_a = search_results[int(wish)-1].rstrip().rsplit('_@')
 	namec = source_a[2].replace('[[[','/')
-        os.system('python .download.py '+fileName+' '+namec+' '+proxyFolder+' '+userId)
+        os.system('python .download.py '+resulted[0]+' '+namec+' '+proxyFolder+' '+userId)
 	if raw_input('Do you want to search for another file [Yes]/[No]').lower().find('y'):
            sys.exit(0)
         else:
